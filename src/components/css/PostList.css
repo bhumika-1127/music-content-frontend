@@ -1,0 +1,117 @@
+/* PostPage.css */
+
+/* Apply background color */
+body {
+  background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwNTktMDQxYy1rdjd2N3duYi5qcGc.jpg'); /* Update path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  /* Container for post list */
+  .post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style individual post */
+  .post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+h1 {
+  position:relative; 
+  font-size:40px; 
+  font-weight:700;  
+  letter-spacing:0px; 
+  text-transform:uppercase; 
+  width:150px; 
+  text-align:center; 
+  margin:auto; 
+  white-space:nowrap; 
+  border:2px solid #222;
+  padding:5px 11px 3px 11px;
+  margin-bottom: 10px;
+}
+  
+  .post h2 {
+    text-align: center;
+    font-size:15px; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.post h2:after,.post h2:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+  
+  .post p {
+    margin-bottom: 10px;
+  }
+  
+  /* Style loading indicator */
+  .loading {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .loading img {
+    width: 40px;
+  }
+  /* Pagination.css */
+
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    background-color: #f7711e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #e26518;
+    
+  }
+  
+  .pagination .active button {
+    background-color: #e26518;
+    border: 1px solid #000;
+  }
+  
